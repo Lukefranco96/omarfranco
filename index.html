@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script src="https://kit.fontawesome.com/503f1547e6.js" crossorigin="anonymous"></script>
+    <title>Personal portfolio Jorge Omar A.F</title>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/OmarFranco logo nv.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web developer</p>
+            <h1>Hi, I'm <span>Omar</span><br>Franco from Mexico</h1>
+        </div>
+    </div>
+</div>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/img1.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hello! I'm a passionate web development student and practitioner since 2022, with work experience since May 2023. I'm always in a state of constant learning, exploring, and honing skills in technologies I didn't even know existed. <br> <br>
+
+                    My area of specialization lies in working with SQL, a technology I discovered and have grown to love. I thoroughly enjoy working with this tool. <br> <br>
+                    
+                    In my short time in web development, I've been involved in developing a dating website for my partner, who is a hair stylist. <br> <br>
+                    
+                    I value honesty and realism in my learning. I consider myself persistent and curious. If I encounter something new, I dive into researching how to do it and don't rest until I achieve it. <br> <br>
+                    
+                    Beyond my passion for web development, I've been a musician since the age of 13 and dedicated myself to cooking from 15 to 26. These experiences have given me a creative mind, team collaboration skills, the ability to work under pressure, and a mindset for continuous improvement.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>FrontEnd:</span><br>HTML, CSS & JavaScript</li>
+                        <li><span>DataBase:</span><br>SQL: MySQL</li>
+                        <li><span>BackEnd:</span><br>PHP</li>
+                        <li><span>Frameworks:</span><br>Bootstrap, TailwindsCSS, Laravel</li>
+                        <li><span>Version control:</span><br>Git, GitHub</li>
+                        <li><span>Agile Methodologies:</span><br>Scrum</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2023- Current:</span><br>Junior web developer at Guillermo Monreal Co.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2023</span><br>FreeCodeCamp: <br><a href="https://www.freecodecamp.org/certification/fcc3085bb1b-50d0-4fef-8a8d-e21bb6fc389f/responsive-web-design">HTML <br>CSS</a> <br>JavaScript <br>SQL</li>
+                        <li><span>2023</span><br>Udemy: <br>Scrum <br>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate eveniet assumenda recusandae iusto cum sunt.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-fire-burner"></i>
+                <h2>Personal Chef</h2>
+                <p>Chef with 10 years of experience, extensive knowledge in private events, the cooking style that most highlights my taste is Japanese and Italian cuisine, Mexican cuisine is in my heart and I serve it in an innovative and gourmet way.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-guitar"></i>
+                <h2>Mejia's Band</h2>
+                <p>Lead Guitar in Mejia's band, we play only at private events, we have many genres but in general we play Latin Rock and Clasic Rock</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Portafolio  -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <p>Este trabajo lo represento con imagenes ya que esta en funcionamiento de forma real, es una plataforma de citas para una salon de belleza ubicado en Guadalajara, Jalisco, esta elaborado con PHP/Laravel y SQL, es el primero proyecto que realize con Guillermo Monreal, una de las partes que implemente fue el selector de servicios por prestador, el nombre de esta empresa es Danitza Zaldivar Hair studio.</p>
+       <div class="container2">
+            <div class="gallery">
+           
+                <a href="images/imagen1.png" data-lightbox="models" data-title="Image 1">
+                    <img src="images/imagen1.png" alt="">
+                </a>
+
+                <div id="show-images">
+                <a href="images/imagen2.png" data-lightbox="models" data-title="Image 2">
+                    <img src="images/imagen2.png" alt="">
+                </a>
+                <a href="images/imagen3.png" data-lightbox="models" data-title="Image 3">
+                    <img src="images/imagen3.png" alt="">
+                </a>
+                <a href="images/imagen4.png" data-lightbox="models" data-title="Image 4">
+                    <img src="images/imagen4.png" alt="">
+                </a>
+                <a href="images/imagen5.png" data-lightbox="models" data-title="Image 5">
+                    <img src="images/imagen5.png" alt="">
+                </a>
+                <a href="images/imagen6.png" data-lightbox="models" data-title="Image 6">
+                    <img src="images/imagen6.png" alt="">
+                </a>
+                <a href="images/imagen7.png" data-lightbox="models" data-title="Image 7">
+                    <img src="images/imagen7.png" alt="">
+                </a>
+                <a href="images/imagen8.png" data-lightbox="models" data-title="Image 8">
+                    <img src="images/imagen8.png" alt="">
+                </a>
+                <a href="images/imagen9.png" data-lightbox="models" data-title="Image 9">
+                    <img src="images/imagen9.png" alt="">
+                </a>
+                <a href="images/imagen10.png" data-lightbox="models" data-title="Image 10">
+                    <img src="images/imagen10.png" alt="">
+                </a>
+                <a href="images/imagen11.png" data-lightbox="models" data-title="Image 11">
+                    <img src="images/imagen11.png" alt="">
+                </a>
+                <a href="images/imagen12.png" data-lightbox="models" data-title="Image 12">
+                    <img src="images/imagen12.png" alt="">
+                </a>
+                <a href="images/imagen13.png" data-lightbox="models" data-title="Image 13">
+                    <img src="images/imagen13.png" alt="">
+                </a>
+                <a href="images/imagen14.png" data-lightbox="models" data-title="Image 14">
+                    <img src="images/imagen14.png" alt="">
+                </a>
+            </div>
+          </div>
+        </div>  
+    </div>
+</div>
+    <!-- contacto -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+                    <div class="contact-left">                        
+                        <h1 class="sub-title">Contact me</h1>
+                            <p><a href="#full-name"><i class="fa-solid fa-envelope-open-text"></i></a> jomaragfc@outlook.com</p>
+                            <p><a href="https://wa.me/13310457526"><i class="fa-brands fa-whatsapp"></i></a>
+                            3310457526</p>  
+                        
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/luke_franco9/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/jorge-omar-aguilar-franco-49a7b42a2"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        </div>
+                        <!-- falta hacer mi cv y ponerlo en el href -->
+                        <a href="images/J.Omar-cvv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+<!-- correo enlazado a php en el apartado de form.php, manda directo a mi correo personal  -->
+            <div class="contact-right">
+            <form action="form.php" method="POST" class="contact">
+                <div class="form-rows">
+                    <label for="full-name">Name</label>
+                    <input type="text" name="full-name" id="full-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-rows">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="youremail@example.com" required>
+                </div>
+                
+                <div class="form-rows">
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" id="btn-submit" class="btn btn2 btn3">Send an e-mail</button>
+            </form>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<footer id="container"> Pagina creada por Jorge Omar Aguilar Franco</footer>
+<script src="lightbox-plus-jquery.min.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
