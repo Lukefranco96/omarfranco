@@ -18,7 +18,7 @@ try{
     $mail -> Host = 'smtp-mail.outlook.com';
     $mail -> SMTPAuth= true;
     $mail-> Username = 'donino55@hotmail.com';
-    $mail-> Password = 'Joaf1996';
+    $mail-> Password = 'umhxpgbqtmcsabie';
     $mail -> SMTPSecure = PHPMailer:: ENCRYPTION_STARTTLS;
     $mail -> Port = 587;
     $mail->SMTPOptions = array(
