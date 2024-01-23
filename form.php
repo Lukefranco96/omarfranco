@@ -19,7 +19,7 @@ try{
     $mail -> SMTPAuth= true;
     $mail-> Username = 'donino55@hotmail.com';
     $mail-> Password = 'Joaf1996';
-    $mail -> SMTPSecure = PHPMailer:: ENCRYPTION_STARTTLS;
+    $mail -> SMTPSecure = PHPMailer:: ENCRYPTION_SSL;
     $mail -> Port = 587;
     $mail->SMTPOptions = array(
         'ssl' => array(
